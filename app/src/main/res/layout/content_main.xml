@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context="com.example.mohsinhussain.allinoneapp.MainActivity"
+    android:id="@+id/leftDrawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+
+
+
+    >
+
+<LinearLayout
+
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+
+>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp">
+
+
+        <ImageButton
+            android:id="@+id/shoppingImage"
+            style="@style/ImageStyle"
+            android:onClick="moveToBrandsList"
+            android:src="@drawable/shoppingcart"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textviewShopping"
+            style="@style/TextStyle"
+
+            android:layout_below="@+id/shoppingImage"
+
+            android:paddingLeft="10dp"
+            android:text="Shopping"
+
+            />
+
+        <ImageButton
+            android:id="@+id/foodImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/shoppingImage"
+            android:onClick="moveToBrandsList"
+            android:src="@drawable/food"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textviewFood"
+            style="@style/TextStyle"
+            android:layout_below="@+id/foodImage"
+            android:layout_toRightOf="@+id/shoppingImage"
+            android:paddingLeft="25dp"
+            android:text="Food"
+
+            />
+
+        <ImageButton
+            android:id="@+id/carhiringImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/foodImage"
+            android:src="@drawable/carbuy"
+
+
+            />
+
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/carhiringImage"
+
+            android:layout_toRightOf="@+id/shoppingImage"
+            android:paddingLeft="90dp"
+
+
+            android:text="Carhiring"
+
+            />
+
+        <ImageButton
+            android:id="@+id/classifiedSitesImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/carhiringImage"
+            android:src="@drawable/onlinejobsearchsymbol"
+
+
+            />
+
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/classifiedSitesImage"
+            android:layout_toRightOf="@+id/carhiringImage"
+            android:paddingLeft="9dp"
+            android:text="Classified Sites"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        >
+
+
+        <ImageButton
+            android:id="@+id/jobSiteImage"
+            style="@style/ImageStyle"
+            android:src="@drawable/onlinejobsearchsymbol"
+
+            />
+        <TextView
+            android:layout_below="@+id/jobSiteImage"
+
+            android:text="Job Site"
+
+            style="@style/TextStyle"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/newsImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/jobSiteImage"
+            android:src="@drawable/newspaper"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/jobSiteImage"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/newsImage"
+            android:text="News"
+
+            />
+
+        <ImageButton
+            android:id="@+id/mobileWalletsImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/newsImage"
+            android:src="@drawable/wallet"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/mobileWalletsImage"
+
+            android:paddingLeft="12dp"
+            android:layout_toRightOf="@+id/newsImage"
+
+
+
+            android:text=" Wallets"
+
+            />
+
+        <ImageButton
+            android:id="@+id/BookingImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/mobileWalletsImage"
+            android:src="@drawable/deals"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/mobileWalletsImage"
+            android:paddingLeft="9dp"
+            android:layout_below="@+id/BookingImage"
+            android:text="Booking"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+<RelativeLayout
+android:id="@+id/RelativeLayout03"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:padding="10dp">
+    >
+
+
+<ImageButton
+    android:id="@+id/GroceryImage"
+    style="@style/ImageStyle"
+    android:src="@drawable/groceriesbag"
+
+    />
+<TextView
+    android:layout_below="@+id/GroceryImage"
+
+    android:text="Grocery"
+
+
+    style="@style/TextStyle"
+    android:paddingLeft="10dp"
+
+    />
+
+<ImageButton
+    android:id="@+id/CarSiteImage"
+    style="@style/ImageStyle"
+    android:layout_toRightOf="@+id/GroceryImage"
+    android:src="@drawable/distancetotravelbetweentwopoints"
+
+
+    />
+<TextView
+
+    style="@style/TextStyle"
+    android:layout_toRightOf="@+id/GroceryImage"
+    android:paddingLeft="25dp"
+    android:layout_below="@+id/CarSiteImage"
+    android:text="Travel"
+
+    />
+
+<ImageButton
+    android:id="@+id/realStateImage"
+    style="@style/ImageStyle"
+    android:layout_toRightOf="@+id/CarSiteImage"
+    android:src="@drawable/realestate"
+
+
+    />
+<TextView
+
+    style="@style/TextStyle"
+    android:layout_below="@+id/realStateImage"
+
+    android:paddingLeft="8dp"
+    android:layout_toRightOf="@+id/CarSiteImage"
+
+
+
+    android:text=" Real State"
+
+    />
+
+<ImageButton
+    android:id="@+id/priceComapnySiteImage"
+    style="@style/ImageStyle"
+    android:layout_toRightOf="@+id/realStateImage"
+    android:src="@drawable/deals"
+
+
+    />
+<TextView
+
+    style="@style/TextStyle"
+    android:layout_toRightOf="@+id/realStateImage"
+    android:paddingLeft="9dp"
+    android:layout_below="@+id/priceComapnySiteImage"
+    android:text="Price Company"
+
+    />
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        >
+
+
+        <ImageButton
+            android:id="@+id/educationSiteImage"
+            style="@style/ImageStyle"
+            android:src="@drawable/education"
+
+            />
+        <TextView
+            android:layout_below="@+id/educationSiteImage"
+
+            android:text="Education"
+
+            style="@style/TextStyle"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/technewsSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/educationSiteImage"
+            android:src="@drawable/technews"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/educationSiteImage"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/technewsSiteImage"
+            android:text="Tech News"
+
+            />
+
+        <ImageButton
+            android:id="@+id/TraveletsiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/technewsSiteImage"
+            android:src="@drawable/taxi"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/TraveletsiteImage"
+
+            android:paddingLeft="12dp"
+            android:layout_toRightOf="@+id/technewsSiteImage"
+
+
+
+            android:text=" Travelling"
+
+            />
+
+        <ImageButton
+            android:id="@+id/HomeServiceSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/TraveletsiteImage"
+            android:src="@drawable/homeservices"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/TraveletsiteImage"
+            android:paddingLeft="9dp"
+            android:layout_below="@+id/HomeServiceSiteImage"
+            android:text="Home Service"
+
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RelativeLayout05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">>
+
+
+        <ImageButton
+            android:id="@+id/medicineSiteImage"
+            style="@style/ImageStyle"
+            android:src="@drawable/medicines"
+
+            />
+        <TextView
+            android:layout_below="@+id/medicineSiteImage"
+
+            android:text="Medicine"
+
+            style="@style/TextStyle"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/financeSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/medicineSiteImage"
+            android:src="@drawable/finance"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/medicineSiteImage"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/financeSiteImage"
+            android:text="Finance"
+
+            />
+
+        <ImageButton
+            android:id="@+id/furnitureSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/financeSiteImage"
+            android:src="@drawable/armchair"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/furnitureSiteImage"
+
+            android:paddingLeft="12dp"
+            android:layout_toRightOf="@+id/financeSiteImage"
+
+
+
+            android:text=" Furniture"
+
+            />
+
+        <ImageButton
+            android:id="@+id/printingSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/furnitureSiteImage"
+            android:src="@drawable/printbutton"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/furnitureSiteImage"
+            android:paddingLeft="9dp"
+            android:layout_below="@+id/printingSiteImage"
+            android:text="Printing"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        >
+
+
+        <ImageButton
+            android:id="@+id/giftandflowersSiteImage"
+            style="@style/ImageStyle"
+            android:src="@drawable/gift"
+
+            />
+        <TextView
+            android:layout_below="@+id/giftandflowersSiteImage"
+
+            android:text="Flower"
+
+            style="@style/TextStyle"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/dealSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/giftandflowersSiteImage"
+            android:src="@drawable/deals"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/giftandflowersSiteImage"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/dealSiteImage"
+            android:text="News"
+
+            />
+
+        <ImageButton
+            android:id="@+id/babyandkidsSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/dealSiteImage"
+            android:src="@drawable/babydummywithbearheadsilhouette"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/babyandkidsSiteImage"
+
+            android:paddingLeft="15dp"
+            android:layout_toRightOf="@+id/dealSiteImage"
+
+
+
+            android:text="  Kids"
+
+            />
+
+        <ImageButton
+            android:id="@+id/womenshoppingSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/babyandkidsSiteImage"
+            android:src="@drawable/dress"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/babyandkidsSiteImage"
+            android:paddingLeft="9dp"
+            android:layout_below="@+id/womenshoppingSiteImage"
+            android:text="Women "
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        >
+
+
+        <ImageButton
+            android:id="@+id/deliveryserviceSiteImage"
+            style="@style/ImageStyle"
+            android:src="@drawable/gift"
+
+            />
+        <TextView
+            android:layout_below="@+id/deliveryserviceSiteImage"
+
+            android:text="Delivery"
+
+            style="@style/TextStyle"
+            android:paddingLeft="10dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/ebuzzsiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/deliveryserviceSiteImage"
+            android:src="@drawable/ebuzz"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/deliveryserviceSiteImage"
+            android:paddingLeft="25dp"
+            android:layout_below="@+id/ebuzzsiteImage"
+            android:text="Ebuzz"
+
+            />
+
+        <ImageButton
+            android:id="@+id/musicSiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/ebuzzsiteImage"
+            android:src="@drawable/music"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_below="@+id/musicSiteImage"
+
+            android:paddingLeft="15dp"
+            android:layout_toRightOf="@+id/ebuzzsiteImage"
+
+
+
+            android:text="  Music"
+
+            />
+
+        <ImageButton
+            android:id="@+id/legalsiteImage"
+            style="@style/ImageStyle"
+            android:layout_toRightOf="@+id/musicSiteImage"
+            android:src="@drawable/legal"
+
+
+            />
+        <TextView
+
+            style="@style/TextStyle"
+            android:layout_toRightOf="@+id/musicSiteImage"
+            android:paddingLeft="9dp"
+            android:layout_below="@+id/legalsiteImage"
+            android:text="Legal "
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+    </ScrollView>
