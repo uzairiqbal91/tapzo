@@ -2,6 +2,8 @@ package com.example.mohsinhussain.allinoneapp;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
@@ -11,7 +13,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+
+import static com.example.mohsinhussain.allinoneapp.DAL.bitmaps;
 
 /**
  * Created by Hp on 6/15/2017.
@@ -21,15 +30,17 @@ public class CustomListView extends ArrayAdapter<String> {
 
     ArrayList<String>brand;
      //String[] brand;
-    Integer[] ImagePath;
+//     ArrayList<Bitmap>bitmaps;
+     ArrayList<String>images;
      Context mcontext;
 
 
-    public CustomListView(Activity context, ArrayList<String> brand, Integer[] ImagePath) {
+
+    public CustomListView(Activity context, ArrayList<String> brand, ArrayList<String> images) {
         super(context, R.layout.custom_view);
         this.brand = brand;
 
-        this.ImagePath = ImagePath;
+        this.images = images;
         this.mcontext = context;
 
     }
@@ -58,7 +69,9 @@ public class CustomListView extends ArrayAdapter<String> {
         } else {
             mViewHolder = (ViewHolder) convertView.getTag();
         }
-//        mViewHolder.mFlag.setImageResource(ImagePath[position]);
+
+        Picasso.with(mcontext).load(images.get(position)).into(mViewHolder.mFlag);
+
         mViewHolder.mName.setText(brand.get(position));
 
         return convertView;

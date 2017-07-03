@@ -26,10 +26,12 @@ public class StoresActivity extends AppCompatActivity {
 
     Integer[] imgId = {
 
-            R.drawable.daraz,
-            R.drawable.yayvo
+      //      R.drawable.daraz,
+        //    R.drawable.yayvo
 
     };
+
+
 
 
 //    String[] brand={
@@ -98,7 +100,7 @@ public class StoresActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
-        CustomListView myAdapter = new CustomListView(this, DAL.getBrandName, imgId);
+        CustomListView myAdapter = new CustomListView(this, DAL.getBrandName, DAL.getImageUrl);
 
         listView.setAdapter(myAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

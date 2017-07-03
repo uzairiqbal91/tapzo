@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity
 
 
           layer=new DAL(this,this);
-        //layer.addProfile();
- //       layer.searchProfile();
+       //layer.addProfile();
+        //layer.addImages();
 //        layer.retrieve();
 //        //layer.getBrandName();
 //        layer.printData();
@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity
         intent.putExtra(CATEGORY,category);
 
 layer.searchProfile(category);
+        //layer.printData();
         startActivity(intent);
 
     }

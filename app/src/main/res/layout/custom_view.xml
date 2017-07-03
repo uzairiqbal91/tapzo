@@ -9,7 +9,7 @@
 
   <ImageView
       android:id="@+id/imageView"
-      style="@style/ImageStyle"
+      style="@style/ImageStyle1"
       />
     <TextView
         android:id="@+id/textView"

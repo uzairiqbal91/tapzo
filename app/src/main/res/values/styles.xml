@@ -45,6 +45,26 @@
 
     </style>
 
+    <style name="ImageStyle1">
+
+
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxWidth">110dp</item>
+        <item name="android:maxHeight">90dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">100dp</item>
+
+
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+
+
+
+
+    </style>
+
 
 
 
